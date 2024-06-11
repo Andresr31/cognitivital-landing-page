@@ -24,7 +24,7 @@ a {
 }
 
 a:hover {
-  color: #717ff5;
+  color: #32ddb5;
   text-decoration: none;
 }
 
@@ -60,18 +60,18 @@ section {
 }
 
 .section-header p {
-  margin: 10px 0 0 0;
+  margin: 8px 0 0 0;
   padding: 0;
-  font-size: 15px;
-  line-height: 42px;
-  font-weight: 700;
+  /* font-size: 15px; */
+  line-height: 22px;
+  /* font-weight: 700; */
   color: #007459;
 }
 
 @media (max-width: 768px) {
   .section-header p {
-    font-size: 28px;
-    line-height: 32px;
+    /* font-size: 28px; */
+    line-height: 22px;
   }
 }
 
@@ -122,7 +122,7 @@ section {
 .breadcrumbs ol li+li::before {
   display: inline-block;
   padding-right: 10px;
-  color: #8894f6;
+  color: #29b998;
   content: "/";
 }
 
@@ -1731,7 +1731,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #5969f3;
+  background: #1e9e80;
 }
 
 @keyframes animate-loading {
@@ -1830,7 +1830,7 @@ section {
 }
 
 .blog .entry .entry-content .read-more a:hover {
-  background: #5969f3;
+  background: #1fa586;
 }
 
 .blog .entry .entry-content h3 {
@@ -2158,7 +2158,7 @@ section {
 }
 
 .blog .sidebar .search-form form button:hover {
-  background: #5465f2;
+  background: #23be9a;
 }
 
 .blog .sidebar .categories ul {
@@ -2308,7 +2308,7 @@ section {
 }
 
 .footer .footer-newsletter form input[type=submit]:hover {
-  background: #5969f3;
+  background: #24c09c;
 }
 
 .footer .footer-top {
