@@ -271,6 +271,33 @@ section {
   background: #9dd0ae;
 }
 
+.btn-cognitiv,
+.btn-cognitiv:focus {
+  background: #167a63;
+  padding: 8px 20px;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.btn-cognitiv:hover,
+.btn-cognitiv:focus:hover {
+  color: #fff;
+  background: #9dd0ae;
+}
+
+.book-image{
+  width: auto;
+  height: 300px;
+}
+
+@media (max-width: 1200px) {
+  .book-image{
+    width: auto;
+    height: 170px;
+    margin-bottom: 10px;
+  }
+}
+
 .navbar .dropdown ul {
   display: block;
   position: absolute;
