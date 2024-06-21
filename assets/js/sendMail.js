@@ -6,7 +6,7 @@ document.getElementById('giftForm').addEventListener('submit', function(event) {
     const email = document.getElementById('email').value;
     const loading = document.getElementById('loadingFormGift');
     loading.classList.remove("d-none");
-    fetch('http://127.0.0.1:8000/api/v1/email-gift', {
+    fetch('https://demo-send-mail-production.up.railway.app/api/v1/email-gift', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -56,7 +56,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
 
     const loading = document.getElementById('loadingFormContact');
     loading.classList.remove("d-none");
-    fetch('http://127.0.0.1:8000/api/v1/email-contact', {
+    fetch('https://demo-send-mail-production.up.railway.app/api/v1/email-contact', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
