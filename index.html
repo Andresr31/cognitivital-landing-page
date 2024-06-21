@@ -40,6 +40,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/sweetalert2.min.css">
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -70,7 +71,7 @@
           <li><a class="nav-link scrollto" href="#contributions">Contribuciones</a></li>
           <!-- <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li> -->
           
-          <li><a class="nav-link scrollto" href="#experiences">Experiencias Significativas</a></li>
+          <li><a class="nav-link scrollto" href="#experiences">Experiencias significativas</a></li>
           <li><a class="nav-link scrollto" href="#team">Equipo</a></li>
           <!-- <li><a href="blog.html">Blog</a></li>
           <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
@@ -116,7 +117,7 @@
             </ul>
           </li> -->
 
-          <li><a class="getstarted " data-toggle="modal" data-target="#bookDialog">Solicitar Obsequio</a></li>
+          <li><a class="getstarted " data-toggle="modal" data-target="#bookDialog">Solicitar obsequio</a></li>
           <!-- <li><a class="getstarted scrollto" href="#about">Get Started</a></li> -->
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -131,7 +132,7 @@
       <div class="modal-dialog modal-lg modal-dialog-centered  modal-dialog-scrollable" role="document">
         <div class="modal-content">
           <div class="modal-header justify-content-center">
-            <h5 class="modal-title" id="bookDialogLabel">Solicitar Obsequio</h5>
+            <h5 class="modal-title" id="bookDialogLabel">Solicitar obsequio</h5>
             <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
@@ -142,25 +143,29 @@
               <img src="assets/img/book-one.png" class="img-fluid book-image" alt="">             
               <img src="assets/img/book-two.png" class="img-fluid book-image" alt="">
             </div>           
-            <form class="my-4" action="#" method="post">
+            <form class="my-4" id="giftForm">
               <div class="mb-3">
                 <label for="name" class="form-label">Nombre Completo</label>
-                <input type="text" class="form-control" id="name">
+                <input type="text" class="form-control" id="name" required>
               </div>
               <div class="mb-3">
                 <label for="age" class="form-label">Edad</label>
-                <input type="number" class="form-control" id="age">
+                <input type="number" class="form-control" id="age" required>
               </div>
               <div class="mb-3">
                 <label for="email" class="form-label">Correo electrónico</label>
-                <input type="email" class="form-control" id="email">
+                <input type="email" class="form-control" id="email" required>
+              </div>
+              <div id="loadingFormGift" class="mb-3 text-center align-items-center d-none">
+                <div class="spinner-border text-success" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
               </div>
               <div class="row justify-content-center my-4 px-3">
-                <button type="button" class="btn btn-cognitiv">Enviar</button>
+                <button type="submit" class="btn btn-cognitiv">Enviar</button>
               </div>
-                         
-              
             </form>
+            
           </div>
           
         </div>
@@ -1147,7 +1152,7 @@
                 <span>CTO</span>
                 <p>Ingeniero de Sistemas</p>
                 <p> Docente e Investigador, Universidad Autónoma de Manizales <br>
-                Arquitecto de Sofware Fullstack, con enfoque en cloud computing
+                Arquitecto de Sofware Fullstack, con enfoque en cloud computing.
                 Con más de 4 años de experiencia en desarrollo y gestión de proyectos de software, enfocado en mejorar la calidad de vida del adulto mayor</p>
               </div>
             </div>
@@ -1291,7 +1296,7 @@
                 <div class="info-box">
                   <i class="bi bi-telephone"></i>
                   <h3>Télefono</h3>
-                  <p>+57 (606) 8727272 <br> +57 (606) 8932609<br><br><br><br><br></p>
+                  <p>+57 (606) 8727272 <br> +57 321 6417455<br>+57 310 3707415<br><br></p>
                 </div>
               </div>
               <div class="col-md-6">
@@ -1313,30 +1318,34 @@
           </div>
 
           <div class="col-lg-6">
-            <form action="#" method="post" class="php-email-form">
+            <form id="contactForm" method="post" class="php-email-form">
               <div class="row gy-4">
 
                 <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Nombre Completo" required>
+                  <input type="text" name="name" id="nameContact" class="form-control" placeholder="Nombre Completo" required>
                 </div>
 
                 <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Correo Electrónico" required>
+                  <input type="email" class="form-control" id="emailContact" name="email" placeholder="Correo Electrónico" required>
                 </div>
 
                 <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Asunto" required>
+                  <input type="number" class="form-control" id="ageContact" name="age" placeholder="Edad" required>
                 </div>
 
                 <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Mensaje" required></textarea>
+                  <input type="text" class="form-control" id="subjectContact" name="subject" placeholder="Asunto" required>
                 </div>
 
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" id="messageContact" placeholder="Mensaje" required></textarea>
+                </div>
+                <div id="loadingFormContact" class="mb-3 text-center align-items-center d-none">
+                  <div class="spinner-border text-success" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                </div>
                 <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Tu mensaje ha sido enviado. Gracias por contactarnos!</div>
-
                   <button type="submit">Enviar mensaje</button>
                 </div>
 
@@ -1444,6 +1453,8 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/sweetalert2.min.js"></script>
+  <script src="assets/js/sendMail.js"></script>
 
 </body>
 
