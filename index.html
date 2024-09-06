@@ -6,8 +6,11 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>CognitiVital</title>
-  <meta content="En Cognitivital, creemos en el poder de la tecnología para transformar vidas. Nos dedicamos a proporcionar herramientas que no solo mejoran la salud cognitiva y física de nuestros usuarios, sino que también les brindan la oportunidad de vivir una vida más plena y satisfactoria." name="description">
-  <meta content="Entrenamiento Cognitivo, Entrenamiento Físico, Adulto Mayor, Deterioro Cognitivo, CognitiVital" name="keywords">
+  <meta
+    content="En Cognitivital, creemos en el poder de la tecnología para transformar vidas. Nos dedicamos a proporcionar herramientas que no solo mejoran la salud cognitiva y física de nuestros usuarios, sino que también les brindan la oportunidad de vivir una vida más plena y satisfactoria."
+    name="description">
+  <meta content="Entrenamiento Cognitivo, Entrenamiento Físico, Adulto Mayor, Deterioro Cognitivo, CognitiVital"
+    name="keywords">
 
   <meta property="og:site_name" content="CognitiVital">
   <meta property="og:title" content="CognitiVital" />
@@ -42,9 +45,15 @@
   <link href="assets/css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/sweetalert2.min.css">
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 
   <!-- =======================================================
   * Landing Name: CognitiVital
@@ -61,7 +70,8 @@
 
       <a href="index.html" class="logo d-flex align-items-center">
         <img src="assets/img/logo.png" alt="">
-        <span>Cogniti</span> <span style="color: #9dd0ae;">Vital</span>
+        <img src="assets/img/cognitivital_titulo.png" alt="">
+        <!-- <span>Cogniti</span> <span style="color: #9dd0ae;">Vital</span> -->
       </a>
 
       <nav id="navbar" class="navbar">
@@ -70,7 +80,7 @@
           <li><a class="nav-link scrollto" href="#about">¿Quiénes somos?</a></li>
           <li><a class="nav-link scrollto" href="#contributions">Contribuciones</a></li>
           <!-- <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li> -->
-          
+
           <li><a class="nav-link scrollto" href="#experiences">Experiencias significativas</a></li>
           <li><a class="nav-link scrollto" href="#team">Equipo</a></li>
           <!-- <li><a href="blog.html">Blog</a></li>
@@ -117,8 +127,8 @@
             </ul>
           </li> -->
 
-          <li><a class="getstarted " data-toggle="modal" data-target="#bookDialog">Solicitar obsequio</a></li>
-          <!-- <li><a class="getstarted scrollto" href="#about">Get Started</a></li> -->
+          <!-- <li><a class="getstarted " data-toggle="modal" data-target="#bookDialog">Valoración</a></li> -->
+          <li><a class="getstarted scrollto" href="./verbalFluencyAssessment.html">Valoración</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -128,49 +138,50 @@
 
   <!-- Modal solicitar obsequio -->
   <!-- Modal -->
-    <div class="modal fade px-4 py-4" id="bookDialog" tabindex="-1" role="dialog" aria-labelledby="bookDialogLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg modal-dialog-centered  modal-dialog-scrollable" role="document">
-        <div class="modal-content">
-          <div class="modal-header justify-content-center">
-            <h5 class="modal-title" id="bookDialogLabel">Solicitar obsequio</h5>
-            <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <p class="text-center">
-               Ingresa tus datos y enviaremos a tu correo un obsequio diseñado especialmente para ti
-            </p>
-            <div class="row mx-auto justify-content-center">
-              <img src="assets/img/book-one.png" class="img-fluid book-image" alt="">             
-              <img src="assets/img/book-two.png" class="img-fluid book-image" alt="">
-            </div>           
-            <form class="my-4" id="giftForm">
-              <div class="mb-3">
-                <label for="name" class="form-label">Nombre Completo</label>
-                <input type="text" class="form-control" id="name" required>
-              </div>
-              <div class="mb-3">
-                <label for="age" class="form-label">Edad</label>
-                <input type="number" class="form-control" id="age" required>
-              </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Correo electrónico</label>
-                <input type="email" class="form-control" id="email" required>
-              </div>
-              <div id="loadingFormGift" class="mb-3 text-center align-items-center d-none">
-                <div class="spinner-border text-success" role="status">
-                  <span class="visually-hidden">Loading...</span>
-                </div>
-              </div>
-              <div class="row justify-content-center my-4 px-3">
-                <button type="submit" class="btn btn-cognitiv">Enviar</button>
-              </div>
-            </form>
-            
-          </div>
-          
+  <div class="modal fade px-4 py-4" id="bookDialog" tabindex="-1" role="dialog" aria-labelledby="bookDialogLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered  modal-dialog-scrollable" role="document">
+      <div class="modal-content">
+        <div class="modal-header justify-content-center">
+          <h5 class="modal-title" id="bookDialogLabel">Solicitar obsequio</h5>
+          <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
         </div>
+        <div class="modal-body">
+          <p class="text-center">
+            Ingresa tus datos y enviaremos a tu correo un obsequio diseñado especialmente para ti
+          </p>
+          <div class="row mx-auto justify-content-center">
+            <img src="assets/img/book-one.png" class="img-fluid book-image" alt="">
+            <img src="assets/img/book-two.png" class="img-fluid book-image" alt="">
+          </div>
+          <form class="my-4" id="giftForm">
+            <div class="mb-3">
+              <label for="name" class="form-label">Nombre Completo</label>
+              <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+              <label for="age" class="form-label">Edad</label>
+              <input type="number" class="form-control" id="age" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div id="loadingFormGift" class="mb-3 text-center align-items-center d-none">
+              <div class="spinner-border text-success" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+            </div>
+            <div class="row justify-content-center my-4 px-3">
+              <button type="submit" class="btn btn-cognitiv">Enviar</button>
+            </div>
+          </form>
+
+        </div>
+
       </div>
     </div>
+  </div>
 
 
   <!-- ======= Hero Section ======= -->
@@ -180,16 +191,20 @@
       <div class="row">
         <div class="col-lg-6 d-flex flex-column justify-content-center">
           <h1 data-aos="fade-up">Te damos la bienvenida a CognitiVital</h1>
-          <h5 class="pt-3" data-aos="fade-up" data-aos-delay="400">Nuestra misión de mejorar la calidad de vida de los adultos mayores se ha forjado a
+          <h5 class="pt-3" data-aos="fade-up" data-aos-delay="400">Nuestra misión de mejorar la calidad de vida de los
+            adultos mayores se ha forjado a
             través de una profunda dedicación a la investigación. Nuestro equipo, ha cultivado una experiencia de
             más de una década en el estudio del envejecimiento, el deterioro cognitivo y físico.</h5>
           <div data-aos="fade-up" data-aos-delay="600">
             <div class="text-center text-lg-start">
-              <a href="#about"
+              <a class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center"
+                data-toggle="modal" data-target="#bookDialog"><span>Obtener cartilla</span>
+                <i class="bi bi-arrow-right"></i></a>
+              <!-- <a href="#about"
                 class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
                 <span>Saber más</span>
                 <i class="bi bi-arrow-right"></i>
-              </a>
+              </a> -->
             </div>
           </div>
         </div>
@@ -212,14 +227,17 @@
             <div class="content">
               <h2>¿Quiénes somos?</h2>
               <p>
-                Somos una empresa pionera dedicada a la innovación en tecnología cognitiva y física. 
-                Nuestra misión es empoderar a las personas mayores para que alcancen su máximo potencial cognitivo y emocional,
-                mejorando su calidad de vida a través del uso de inteligencia artificial y tecnologías avanzadas. <br><br>
-                             
-                En Cognitivital, creemos en el poder de la tecnología para transformar vidas. Nos dedicamos a proporcionar 
-                herramientas que no solo mejoran la salud cognitiva y física de nuestros usuarios, sino que también les 
+                Somos una empresa pionera dedicada a la innovación en tecnología cognitiva y física.
+                Nuestra misión es empoderar a las personas mayores para que alcancen su máximo potencial cognitivo y
+                emocional,
+                mejorando su calidad de vida a través del uso de inteligencia artificial y tecnologías avanzadas.
+                <br><br>
+
+                En Cognitivital, creemos en el poder de la tecnología para transformar vidas. Nos dedicamos a
+                proporcionar
+                herramientas que no solo mejoran la salud cognitiva y física de nuestros usuarios, sino que también les
                 brindan la oportunidad de vivir una vida más plena y satisfactoria. <br><br>
-              </p> 
+              </p>
               <div class="text-center text-lg-start">
                 <a href="#contributions"
                   class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
@@ -256,7 +274,9 @@
             <div class="box">
               <!-- <img src="assets/img/contributions-1.png" class="img-fluid" alt=""> -->
               <!-- <h3>Ad cupiditate sed est odio</h3> -->
-              <a href="https://revistas.eia.edu.co/index.php/reveia/article/view/1424/1381" target="_blank" rel="noopener noreferrer">"Prescripción del ejercicio físico desde la realidad virtual semi-inmersiva, alternativa en los
+              <a href="https://revistas.eia.edu.co/index.php/reveia/article/view/1424/1381" target="_blank"
+                rel="noopener noreferrer">"Prescripción del ejercicio físico desde la realidad virtual semi-inmersiva,
+                alternativa en los
                 procesos de rehabilitación funcional para el adulto mayor."</a>
             </div>
           </div>
@@ -265,7 +285,9 @@
             <div class="box">
               <!-- <img src="assets/img/contributions-2.png" class="img-fluid" alt=""> -->
               <!-- <h3>Voluptatem voluptatum alias</h3> -->
-              <a href="https://revistas.ucp.edu.co/index.php/entrecienciaeingenieria/article/view/583/591" target="_blank" rel="noopener noreferrer">"Impacto de IoT en la prevención, asistencia, detección y rehabilitación de pacientes con deterioro
+              <a href="https://revistas.ucp.edu.co/index.php/entrecienciaeingenieria/article/view/583/591"
+                target="_blank" rel="noopener noreferrer">"Impacto de IoT en la prevención, asistencia, detección y
+                rehabilitación de pacientes con deterioro
                 cognitivo: una revisión."</a>
             </div>
           </div>
@@ -274,7 +296,9 @@
             <div class="box">
               <!-- <img src="assets/img/contributions-3.png" class="img-fluid" alt=""> -->
               <!-- <h3>Fugit cupiditate alias nobis.</h3> -->
-              <a href="https://www.medrxiv.org/content/10.1101/2022.05.24.22275497v1.full" target="_blank" rel="noopener noreferrer">"Effects of virtual reality-based aerobic endurance training on the functional fitness of healthy older
+              <a href="https://www.medrxiv.org/content/10.1101/2022.05.24.22275497v1.full" target="_blank"
+                rel="noopener noreferrer">"Effects of virtual reality-based aerobic endurance training on the functional
+                fitness of healthy older
                 adults: A systematic review."</a>
             </div>
           </div>
@@ -283,7 +307,9 @@
             <div class="box">
               <!-- <img src="assets/img/contributions-3.png" class="img-fluid" alt=""> -->
               <!-- <h3>Fugit cupiditate alias nobis.</h3> -->
-              <a href="https://link.springer.com/chapter/10.1007/978-3-319-98998-3_38" target="_blank" rel="noopener noreferrer">"Intelligent Hybrid Approach for Computer-Aided Diagnosis of Mild Cognitive Impairment."</a>
+              <a href="https://link.springer.com/chapter/10.1007/978-3-319-98998-3_38" target="_blank"
+                rel="noopener noreferrer">"Intelligent Hybrid Approach for Computer-Aided Diagnosis of Mild Cognitive
+                Impairment."</a>
             </div>
           </div>
 
@@ -1088,7 +1114,7 @@
           <h2>Equipo</h2>
           <p>Nuestros profesionales puestos a tu disposición</p>
         </header>
-        
+
         <div class="row gy-4">
 
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
@@ -1126,12 +1152,12 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4>Santiago  Murillo Rendón</h4>
+                <h4>Santiago Murillo Rendón</h4>
                 <span>CTO</span>
                 <p>Ingeniero Electronico | Maestría en Ingeniería</p>
                 <p>Doctor en Ciencias Cognitivas
-                  Docente e Investigador, Universidad Autónoma de Manizales <br/> Universidad de Caldas <br/> 
-                  Con más de 10 años de experiencia <br/>  trabajando por la calidad de vida del adulto mayor</p>
+                  Docente e Investigador, Universidad Autónoma de Manizales <br /> Universidad de Caldas <br />
+                  Con más de 10 años de experiencia <br /> trabajando por la calidad de vida del adulto mayor</p>
               </div>
             </div>
           </div>
@@ -1152,8 +1178,9 @@
                 <span>CTO</span>
                 <p>Ingeniero de Sistemas</p>
                 <p> Docente e Investigador, Universidad Autónoma de Manizales <br>
-                Arquitecto de Sofware Fullstack, con enfoque en cloud computing.
-                Con más de 4 años de experiencia en desarrollo y gestión de proyectos de software, enfocado en mejorar la calidad de vida del adulto mayor</p>
+                  Arquitecto de Sofware Fullstack, con enfoque en cloud computing.
+                  Con más de 4 años de experiencia en desarrollo y gestión de proyectos de software, enfocado en mejorar
+                  la calidad de vida del adulto mayor</p>
               </div>
             </div>
           </div>
@@ -1174,18 +1201,27 @@
                 <span>Accountant</span>
                 <p>Fisioterapeuta | Maestria en educacion y Desarrollo Humano</p>
                 <p>Especialista en Intervencion fisioterapeutica en ortopedia, traumatología y educación sexual
-                  Docente e Investigadora, Universidad Autónoma de Manizales<br/> 
-                  Con más de 10 años de experiencia <br/>  trabajando por la calidad de vida del adulto mayor</p>
+                  Docente e Investigadora, Universidad Autónoma de Manizales<br />
+                  Con más de 10 años de experiencia <br /> trabajando por la calidad de vida del adulto mayor</p>
               </div>
             </div>
           </div>
-          
+
 
         </div>
         <div class="container py-4 mt-4" data-aos="fade-up" data-aos-delay="200">
-          <p>Somos un equipo excepcional de docentes universitarios e investigadores comprometidos con la mejora de la calidad de vida de los adultos mayores. Con más de una década de experiencia dedicada a comprender y abordar los desafíos del envejecimiento, el deterioro cognitivo y la independencia, estamos aquí para marcar la diferencia. <br><br>
-            Nuestro equipo multidisciplinario combina la experiencia de ingenieros, psicólogos y neuropsicólogos, lo que nos permite abordar los aspectos cognitivos y físicos de una manera completa y efectiva. Creemos que la tecnología y la investigación pueden revolucionar la forma en que envejecemos, y estamos comprometidos a hacerlo realidad <br><br>
-            En Cognitiv, nuestro equipo no solo trabaja para mantener a las personas mayores activas y saludables, sino también para inspirar y empoderar a toda una generación a vivir con plenitud. Estamos emocionados de tener la oportunidad de colaborar contigo en este emocionante viaje hacia un envejecimiento más saludable y feliz.</p>
+          <p>Somos un equipo excepcional de docentes universitarios e investigadores comprometidos con la mejora de la
+            calidad de vida de los adultos mayores. Con más de una década de experiencia dedicada a comprender y abordar
+            los desafíos del envejecimiento, el deterioro cognitivo y la independencia, estamos aquí para marcar la
+            diferencia. <br><br>
+            Nuestro equipo multidisciplinario combina la experiencia de ingenieros, psicólogos y neuropsicólogos, lo que
+            nos permite abordar los aspectos cognitivos y físicos de una manera completa y efectiva. Creemos que la
+            tecnología y la investigación pueden revolucionar la forma en que envejecemos, y estamos comprometidos a
+            hacerlo realidad <br><br>
+            En Cognitiv, nuestro equipo no solo trabaja para mantener a las personas mayores activas y saludables, sino
+            también para inspirar y empoderar a toda una generación a vivir con plenitud. Estamos emocionados de tener
+            la oportunidad de colaborar contigo en este emocionante viaje hacia un envejecimiento más saludable y feliz.
+          </p>
         </div>
       </div>
 
@@ -1322,11 +1358,13 @@
               <div class="row gy-4">
 
                 <div class="col-md-6">
-                  <input type="text" name="name" id="nameContact" class="form-control" placeholder="Nombre Completo" required>
+                  <input type="text" name="name" id="nameContact" class="form-control" placeholder="Nombre Completo"
+                    required>
                 </div>
 
                 <div class="col-md-6 ">
-                  <input type="email" class="form-control" id="emailContact" name="email" placeholder="Correo Electrónico" required>
+                  <input type="email" class="form-control" id="emailContact" name="email"
+                    placeholder="Correo Electrónico" required>
                 </div>
 
                 <div class="col-md-12">
@@ -1334,11 +1372,13 @@
                 </div>
 
                 <div class="col-md-12">
-                  <input type="text" class="form-control" id="subjectContact" name="subject" placeholder="Asunto" required>
+                  <input type="text" class="form-control" id="subjectContact" name="subject" placeholder="Asunto"
+                    required>
                 </div>
 
                 <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" id="messageContact" placeholder="Mensaje" required></textarea>
+                  <textarea class="form-control" name="message" rows="6" id="messageContact" placeholder="Mensaje"
+                    required></textarea>
                 </div>
                 <div id="loadingFormContact" class="mb-3 text-center align-items-center d-none">
                   <div class="spinner-border text-success" role="status">
@@ -1387,8 +1427,10 @@
           <div class="col-lg-5 col-md-12 footer-info">
             <div class="social-links mt-3 mt-3">
               <!-- <a href="#" class="twitter"><i class="bi bi-twitter"></i></a> -->
-              <a target="_blank" href="https://www.facebook.com/profile.php?id=61560874200504" class="facebook" style="color: #007459;"><i class="bi bi-facebook"></i></a>
-              <a target="_blank" href="https://www.instagram.com/cognitivital/" class="instagram" style="color: #007459;"><i class="bi bi-instagram"></i></a>
+              <a target="_blank" href="https://www.facebook.com/profile.php?id=61560874200504" class="facebook"
+                style="color: #007459;"><i class="bi bi-facebook"></i></a>
+              <a target="_blank" href="https://www.instagram.com/cognitivital/" class="instagram"
+                style="color: #007459;"><i class="bi bi-instagram"></i></a>
               <!-- <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a> -->
             </div>
             <a href="index.html" class="logo d-flex align-items-center">
@@ -1399,8 +1441,8 @@
             </a>
             <!-- <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies
               darta donna mare fermentum iaculis eu non diam phasellus.</p> -->
-            
-            
+
+
           </div>
 
           <div class="col-lg-5 col-12 footer-links">
@@ -1411,9 +1453,11 @@
               <li><i class="bi bi-chevron-right"></i> <a href="#contributions">Contribuciones</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#experiences">Experiencias Significativas</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#team">Equipo</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="https://www.autonoma.edu.co/sites/default/files/2022-08/Politica-tratamiento-de-datos-personales.pdf">Política de Tratamiento de Datos Personales</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a
+                  href="https://www.autonoma.edu.co/sites/default/files/2022-08/Politica-tratamiento-de-datos-personales.pdf">Política
+                  de Tratamiento de Datos Personales</a></li>
             </ul>
-            
+
           </div>
 
           <!-- <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
@@ -1440,7 +1484,8 @@
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/flexstart-bootstrap-startup-template/ -->
-        <a href="https://www.autonoma.edu.co/sites/default/files/2022-08/Politica-tratamiento-de-datos-personales.pdf">Política de Tratamiento de Datos Personales</a>
+        <a href="https://www.autonoma.edu.co/sites/default/files/2022-08/Politica-tratamiento-de-datos-personales.pdf">Política
+          de Tratamiento de Datos Personales</a>
       </div>
     </div>
   </footer><!-- End Footer -->
